@@ -1,0 +1,61 @@
+html, body {
+  height: 100%; }
+
+header, section {
+  padding-top: 50px;
+  height: 100%;
+  min-height: 100%; }
+
+h1.pacifico {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+header {
+  background-image: url("/img/main_cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 100%; }
+
+#events {
+  background-image: url("/img/event_cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 100%; }
+
+#concert {
+  background-image: url("/img/concert_cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 100%; }
+
+#talent {
+  background-image: url("/img/talent_cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 100%; }
+
+#consult {
+  background-image: url("/img/consult_cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+{
+  "name": "R98-project",
+  "version": "0.0.1",
+  "authors": [
+    "readmerisen <r3ad_me@yahoo.com>"
+  ],
+  "description": "main R98 website",
+  "main": "/app/index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "website"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.r98production.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "fontawesome": "~4.2.0",
+    "moment": "~2.8.4"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.10"
+  }
+}
