@@ -11,33 +11,57 @@ header, section {
 .josefin {
   font-family: 'Josefin Slab', serif; }
 
-.oswald {
+.oswald, .menuBar ul li a {
   font-family: 'Oswald', sans-serif; }
 
-h1.pacifico {
+h1 {
   font-size: 3em; }
 
 .uppercase {
   text-transform: uppercase; }
 
+.content-wrapper {
+  height: 100%; }
+
 #menuButton {
-  position: absolute;
+  position: fixed;
   top: 1em;
-  left: 1em;
+  right: 1em;
   z-index: 99;
   display: block;
   text-align: center;
-  font-size: 14px;
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
   cursor: pointer;
-  background: black;
-  color: white;
+  color: black;
   border-radius: 30px; }
 
-.content-wrapper {
-  height: 100%; }
+.menuBar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: black;
+  z-index: 99; }
+  .menuBar ul {
+    list-style: none; }
+    .menuBar ul li {
+      height: 3em;
+      color: #999; }
+      .menuBar ul li a {
+        position: relative;
+        top: 3px;
+        left: 1em;
+        color: #aaa;
+        text-decoration: none;
+        font-size: 1.5em; }
+    .menuBar ul li:hover {
+      background-color: #aaa; }
+      .menuBar ul li:hover a {
+        color: white; }
+  .menuBar .socmed {
+    position: relative;
+    left: 4em;
+    color: #aaa; }
 
 header {
   color: white;
@@ -97,8 +121,11 @@ header {
     .section-content {
       padding-left: 7em;
       padding-right: 7em; } }
+  .section-content p {
+    max-width: 384px; }
   .section-content form input, .section-content form textarea {
-    margin: 0.5em 0; }
+    margin: 0.5em 0;
+    max-width: 384px; }
 
 .content-wrap {
   max-width: 384px; }

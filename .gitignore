@@ -2,6 +2,7 @@
 /node_modules
 /src/resources
 /src/bower_components
+/src/.sass-cache
 
 ## OS generated files ##
 .DS_Store
