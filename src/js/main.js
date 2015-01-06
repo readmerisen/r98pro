@@ -24,4 +24,19 @@ $(document).ready(function(){
 			}, 250);
 		}
 	});
+
+	$('.menuBarLink').on('click', function(){
+		var menuBar = $('.menuBar');
+		var menuBarWidth = $('.menuBar').width();
+		var menuBarButton = $('#menuButton');
+
+		menuBar.toggleClass("open");
+
+		menuBar.animate({
+				right: -menuBarWidth
+			},250);
+			menuBarButton.animate({
+				right: "1em"
+			}, 250);
+		});	
 });

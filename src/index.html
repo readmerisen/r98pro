@@ -46,10 +46,10 @@
         <div class="menuBar">
             <div class="logo">IMAGE</div>
             <ul>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#concert">Concert</a></li>
-                <li><a href="#talent">Talent</a></li>
-                <li><a href="#consult">Consult</a></li>
+                <li><a href="#events" class="page-scroll menuBarLink">Events</a></li>
+                <li><a href="#concert" class="menuBarLink">Concert</a></li>
+                <li><a href="#talent" class="menuBarLink">Talent</a></li>
+                <li><a href="#consult" class="menuBarLink">Consult</a></li>
             </ul>
             <span class="socmed">
                 <i class="fa fa-twitter fa-2x"></i>
@@ -142,11 +142,17 @@
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="bower_components/classie/classie.js"></script>
-        <script src="js/vendor/cbpAnimatedHeader.js"></script>
+
+        <script src="bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
         
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $('ul li a').smoothScroll();
+        });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
