@@ -22,10 +22,16 @@
         
         <!-- custom fonts -->
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+        <div class="content-wrapper">
+        <div id="menuButton">
+            <i class="fa fa-bars"></i> 
+        </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -33,41 +39,6 @@
         <!-- Add your site or application content here -->
         <!-- CONTENT    -->
         <!-- NAVIGATION -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<!-- Group for mobile display -->
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target="#r98-navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div><!-- /.navbar-header -->
-				
-				<div class="collapse navbar-collapse" id="r98-navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="hidden">
-							<a href="#page-top"></a>
-						</li>
-						<li>
-                            <a class="page-scroll" href="#events">Events</a>
-						</li>
-						<li>
-                            <a class="page-scroll" href="#concert">Concert</a>
-
-						</li>
-						<li>
-							<a class="page-scroll" href="#talent">Talent</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#consult">Consult</a>
-						</li>
-					</ul>
-				</div><!--/#r98-navbar-collapse" -->
-			</div><!-- /.container -->
-		</nav>
         
         <header>
             <div class="container">
@@ -76,42 +47,80 @@
         </header>
         
         <section id="events">
-            <h1 class="pacifico">Event</h1>
-            <p>Jangan lewatkan event seru didekatmu! Follow kami di social media agar kamu tidak terlerwatkan event seru dari kami.</p>
-            <p>
-            <ul>
-                <li> event generator </li>
-                <li> event generator </li>
-                <li> event generator </li>
-            </ul>
-            </p>
+            <div class="section-content">
+                <h1 class="pacifico">Event</h1>
+                <div class="content-wrap">
+                    <p>Jangan lewatkan event seru didekatmu! Follow kami di social media agar kamu tidak terlerwatkan event seru dari kami.</p>
+                    <p>
+                    <ul class="event-ul">
+                        <li>
+                            <div class="event">
+                                <div class="date">13</div>
+                                <div class="desc">LOL</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event">
+                                <div class="date">13</div>
+                                <div class="desc">LOL</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event">
+                                <div class="date">13</div>
+                                <div class="desc">LOL</div>
+                            </div>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
         </section>
         
         <section id="concert">
-            <div class="concert-wrapper">
+            <div class="concert-content">
+                <div class="concert-wrapper">
                 <h1 class="pacifico">Concert</h1>
-                <h1 class="uppercase">Artist Name</h1>
-                <span class="uppercase">Location // Tanggal</span>
+                <p>
+                <span class="concert-artist uppercase oswald">Taylor  Swift</span><br>
+                <span class="concert-date uppercase josefin">Gelora Bung Karno // 30February2015</span><br>
+                <span>For ticket and more information, contact us on our telephone number</span>
+                </p>
+                </div>
             </div>
         </section>
         
         <section id="talent">
+            <div class="section-content">
             <h1 class="pacifico">Talent</h1>
             <p>Beberapa dari artist dan talent yang bekerja sama dengan kami.</p>
+            </div>
         </section>
         
         <section id="consult">
-            <h1 class="pacifico">Consult</h1>
-            <p>Kalian dapat menghubung kami melalui nomor telepon: 021 - 889 9898<br/>
-            Atau tinggalkan <em>inquiry</em> melalui form di bawah ini.</p>
-            <form>
-                <input type="text" name="senderName" placeholder="Nama Anda">
-                <input type="email" name="senderEmail" placeholder="Masukan E-mail">
-                <input type="text" name="senderMessage" placeholder="Pesan / Pertanyaan Anda">
-                <button type="submit" class="uppercase">Submit</button>
-            </form>
+            <div class="section-content">
+                <h1 class="pacifico">Consult</h1>
+                <p>Kalian dapat menghubung kami melalui nomor telepon: 021 - 889 9898<br/>
+                Atau tinggalkan <em>inquiry</em> melalui form di bawah ini.</p>
+                <form>
+                    <input type="text" class="form-control" name="senderName" placeholder="Nama Anda">
+                    <input type="email" class="form-control" name="senderEmail" placeholder="Masukan E-mail">
+                    <textarea rows="5" class="form-control" name="senderMessage" placeholder="Pesan / Pertanyaan Anda"></textarea>
+                    <button type="submit" class="btn btn-primary uppercase">Submit</button>
+                </form>
+            </div>
         </section>
         
+        <footer>
+            <div class="container">
+                <i class="fa fa-2x fa-twitter"></i> 
+                <i class="fa fa-2x fa-instagram"></i>
+                <br/>&copy; 2014 - 2015 R98 Production
+            </div>
+        </footer>
+        
+        </div><!-- content-wrapper -->
+
         <!-- Load the scripts -->
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
         

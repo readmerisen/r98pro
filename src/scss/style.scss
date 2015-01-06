@@ -1,15 +1,27 @@
+$bg-gray: rgba(15,15,15,0.8);
+
 html, body{
     height: 100%;
 }
 
 header, section{
-    padding-top: 50px;
     height: 100%;
     min-height: 100%;
 }
 
+.pacifico{
+    font-family: 'Pacifico', cursive; 
+}
+
+.josefin{
+    font-family: 'Josefin Slab', serif;
+}
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
 h1.pacifico{
-    font-family: 'Pacifico', cursive;
     font-size: 3em;
 }
 
@@ -17,7 +29,25 @@ h1.pacifico{
     text-transform: uppercase;
 }
 
+#menuButton{
+    position: absolute;
+    top:1em;
+    left:1em;
+    z-index: 99;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border-radius: 30px;
+}
+
 @mixin section-background ($bgurl){
+    color: white;
     background-image: url($bgurl);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,6 +55,10 @@ h1.pacifico{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     height: 100%;
+}
+
+.content-wrapper{
+    height:100%;
 }
 
 header {@include section-background('/img/main_cover.jpg');}
@@ -36,3 +70,88 @@ header {@include section-background('/img/main_cover.jpg');}
 #talent {@include section-background('/img/talent_cover.jpg');}
 
 #consult{@include section-background('/img/consult_cover.jpg');}
+
+.section-content{
+    position: relative;
+    padding-top: 50px;
+    margin: 0 2em;
+    
+    @media (min-width: 720px){
+        padding-left: 7em;
+        padding-right: 7em;
+    }
+    
+    form{
+        input, textarea{
+            margin: 0.5em 0;
+        }
+    }
+}
+
+.content-wrap{
+    max-width: 1/2.5*960px;
+}
+
+.event-ul{
+     background-color: $bg-gray;
+    
+    li{
+        position: relative;
+        list-style: none;
+        left:-40px;
+    }
+}
+
+.event{
+    width: 100%;
+    
+    div {
+        display: inline-block;
+    }
+    
+    .date{
+        margin: 1em 0 1em 1em;
+        background-color: blue;
+        width: 5em;
+        height: 5em;
+    }
+}
+
+.concert-content{
+    position: relative;
+    top: 20%;
+    margin: 0 2em;
+    
+    
+    @media (min-width: 520px){
+        top:50%;
+        padding-left: 7em;
+    }
+    
+    .concert-wrapper{
+        padding: 0.5em 1.5em;
+        border-radius: 1em;
+        background-color: $bg-gray;
+        max-width: 720px;
+        
+    }
+}
+
+.concert-artist{
+    font-size:4em;
+}
+
+.concert-date{
+    font-size: 2em;
+    line-height: 1em;
+}
+
+footer{
+    height: 1/2*200px;
+    color: #aaa;
+    background: #333;
+    
+    div {
+        padding-top: 2em;
+    }
+}

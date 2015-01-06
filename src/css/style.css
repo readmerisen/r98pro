@@ -2,18 +2,45 @@ html, body {
   height: 100%; }
 
 header, section {
-  padding-top: 50px;
   height: 100%;
   min-height: 100%; }
 
+.pacifico {
+  font-family: 'Pacifico', cursive; }
+
+.josefin {
+  font-family: 'Josefin Slab', serif; }
+
+.oswald {
+  font-family: 'Oswald', sans-serif; }
+
 h1.pacifico {
-  font-family: 'Pacifico', cursive;
   font-size: 3em; }
 
 .uppercase {
   text-transform: uppercase; }
 
+#menuButton {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 99;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 30px; }
+
+.content-wrapper {
+  height: 100%; }
+
 header {
+  color: white;
   background-image: url("/img/main_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +50,7 @@ header {
   height: 100%; }
 
 #events {
+  color: white;
   background-image: url("/img/event_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,6 +60,7 @@ header {
   height: 100%; }
 
 #concert {
+  color: white;
   background-image: url("/img/concert_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,6 +70,7 @@ header {
   height: 100%; }
 
 #talent {
+  color: white;
   background-image: url("/img/talent_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,6 +80,7 @@ header {
   height: 100%; }
 
 #consult {
+  color: white;
   background-image: url("/img/consult_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,5 +88,64 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   height: 100%; }
+
+.section-content {
+  position: relative;
+  padding-top: 50px;
+  margin: 0 2em; }
+  @media (min-width: 720px) {
+    .section-content {
+      padding-left: 7em;
+      padding-right: 7em; } }
+  .section-content form input, .section-content form textarea {
+    margin: 0.5em 0; }
+
+.content-wrap {
+  max-width: 384px; }
+
+.event-ul {
+  background-color: rgba(15, 15, 15, 0.8); }
+  .event-ul li {
+    position: relative;
+    list-style: none;
+    left: -40px; }
+
+.event {
+  width: 100%; }
+  .event div {
+    display: inline-block; }
+  .event .date {
+    margin: 1em 0 1em 1em;
+    background-color: blue;
+    width: 5em;
+    height: 5em; }
+
+.concert-content {
+  position: relative;
+  top: 20%;
+  margin: 0 2em; }
+  @media (min-width: 520px) {
+    .concert-content {
+      top: 50%;
+      padding-left: 7em; } }
+  .concert-content .concert-wrapper {
+    padding: 0.5em 1.5em;
+    border-radius: 1em;
+    background-color: rgba(15, 15, 15, 0.8);
+    max-width: 720px; }
+
+.concert-artist {
+  font-size: 4em; }
+
+.concert-date {
+  font-size: 2em;
+  line-height: 1em; }
+
+footer {
+  height: 100px;
+  color: #aaa;
+  background: #333; }
+  footer div {
+    padding-top: 2em; }
 
 /*# sourceMappingURL=style.css.map */
