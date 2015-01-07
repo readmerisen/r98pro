@@ -11,7 +11,7 @@ header, section {
 .josefin {
   font-family: 'Josefin Slab', serif; }
 
-.oswald, .menuBar ul li a {
+.oswald, .menuBarWrapper ul li a {
   font-family: 'Oswald', sans-serif; }
 
 h1 {
@@ -42,40 +42,50 @@ h1 {
   height: 100%;
   background: black;
   z-index: 99; }
-  .menuBar ul {
+
+.menuBarWrapper {
+  padding: 3em 1em; }
+  .menuBarWrapper img {
+    position: relative;
+    left: 3em;
+    margin-bottom: 2em; }
+  .menuBarWrapper ul {
     list-style: none; }
-    .menuBar ul li {
+    .menuBarWrapper ul li {
       height: 3em;
       color: #999; }
-      .menuBar ul li a {
+      .menuBarWrapper ul li a {
         position: relative;
         top: 3px;
-        left: 1em;
+        left: 0.2em;
         color: #aaa;
         text-decoration: none;
         font-size: 1.5em; }
-    .menuBar ul li:hover {
+    .menuBarWrapper ul li:hover {
       background-color: #aaa; }
-      .menuBar ul li:hover a {
-        color: white; }
-  .menuBar .socmed {
+      .menuBarWrapper ul li:hover a {
+        color: black; }
+  .menuBarWrapper .socmed {
     position: relative;
-    left: 4em;
+    left: 3em;
+    margin-top: 2em;
     color: #aaa; }
 
 header {
   color: white;
-  background-image: url("/img/main_cover.jpg");
+  background-image: url("../img/main_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   height: 100%; }
+  header div.container {
+    height: 100%; }
 
 #events {
   color: white;
-  background-image: url("/img/event_cover.jpg");
+  background-image: url("../img/event_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -85,7 +95,7 @@ header {
 
 #concert {
   color: white;
-  background-image: url("/img/concert_cover.jpg");
+  background-image: url("../img/concert_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -95,7 +105,7 @@ header {
 
 #talent {
   color: white;
-  background-image: url("/img/talent_cover.jpg");
+  background-image: url("../img/talent_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -105,7 +115,7 @@ header {
 
 #consult {
   color: white;
-  background-image: url("/img/consult_cover.jpg");
+  background-image: url("../img/consult_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -113,9 +123,19 @@ header {
   -moz-background-size: cover;
   height: 100%; }
 
+.intro {
+  position: relative;
+  height: 100%; }
+
+.introimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .section-content {
   position: relative;
-  padding-top: 50px;
+  padding-top: 3.5em;
   margin: 0 2em; }
   @media (min-width: 720px) {
     .section-content {
@@ -167,6 +187,12 @@ header {
 .concert-date {
   font-size: 2em;
   line-height: 1em; }
+
+@media (max-height: 600px) {
+  #consult div h1 {
+    margin: 0.4em 0; }
+  #consult div p {
+    margin: 0.1em 0; } }
 
 footer {
   height: 100px;

@@ -12,8 +12,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         
-        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
         
         <link rel="stylesheet" href="css/normalize.css">
@@ -44,9 +44,12 @@
         </div>
 
         <div class="menuBar">
-            <div class="logo">IMAGE</div>
+            <div class="menuBarWrapper">
+            <div class="logo">
+                <a href="#home" class="menuBarLink"><img src="img/r98Logo_small.png"/></a>
+            </div>
             <ul>
-                <li><a href="#events" class="page-scroll menuBarLink">Events</a></li>
+                <li><a href="#events" class="menuBarLink">Events</a></li>
                 <li><a href="#concert" class="menuBarLink">Concert</a></li>
                 <li><a href="#talent" class="menuBarLink">Talent</a></li>
                 <li><a href="#consult" class="menuBarLink">Consult</a></li>
@@ -54,11 +57,17 @@
             <span class="socmed">
                 <i class="fa fa-twitter fa-2x"></i>
                 <i class="fa fa-instagram fa-2x"></i>
+            </span>
+            </div><!-- menuBarWrapper -->
         </div>
         
-        <header>
+        <header id="home">
             <div class="container">
-                <div class="intro-lead-in">R98 LOGO</div>
+                <div class="intro">
+                    <div class="introimg">
+                        <img src="img/r98Logo.png"/>
+                    </div>
+                </div>
             </div>
         </header>
         
@@ -116,8 +125,15 @@
         <section id="consult">
             <div class="section-content">
                 <h1 class="pacifico">Consult</h1>
-                <p>Kalian dapat menghubung kami melalui nomor telepon: 021 - 889 9898<br/>
-                Atau tinggalkan <em>inquiry</em> melalui form di bawah ini.</p>
+                <address>
+                    <strong>R98 Production, Pte Ltd.</strong><br>
+                    Washington, Ave. No. 98<br>
+                    Jakarta 12323<br>
+
+                    <i class="fa fa-phone"></i> +62 21 88889898<br>
+                    <i class="fa fa-envelope"></i> contact@r98production.com
+                </address><br>
+                <p>You also can leave your <em>inquiry</em> by using this form, and we will reach you back soon.</p>
                 <form>
                     <input type="text" class="form-control" name="senderName" placeholder="Nama Anda">
                     <input type="email" class="form-control" name="senderEmail" placeholder="Masukan E-mail">
@@ -138,7 +154,7 @@
         </div><!-- content-wrapper -->
 
         <!-- Load the scripts -->
-        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -151,6 +167,7 @@
         <script>
         $(document).ready(function(){
             $('ul li a').smoothScroll();
+            $('div a').smoothScroll();
         });
         </script>
 

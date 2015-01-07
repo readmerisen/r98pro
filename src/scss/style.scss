@@ -55,6 +55,16 @@ $menuBarwidth: 250px;
     height: 100%;
     background: black;
     z-index: 99;
+}
+
+.menuBarWrapper{
+    padding: 3em 1em;
+
+    img{
+        position: relative;
+        left: 3em;
+        margin-bottom: 2em;
+    }
 
     ul{
         list-style: none;
@@ -66,7 +76,7 @@ $menuBarwidth: 250px;
                 @extend .oswald;
                 position:relative;
                 top:3px;
-                left: 1em;
+                left: 0.2em;
                 color: #aaa;
                 text-decoration: none;
                 font-size: 1.5em;
@@ -76,17 +86,19 @@ $menuBarwidth: 250px;
         li:hover{
             background-color:#aaa;
             a {
-            color: white;
+            color: black;
             }
         }
     }
 
     .socmed{
         position: relative;
-        left:4em;
+        left:3em;
+        margin-top: 2em;
         color: #aaa;
     }
 }
+
 
 @mixin section-background ($bgurl){
     color: white;
@@ -99,19 +111,36 @@ $menuBarwidth: 250px;
     height: 100%;
 }
 
-header {@include section-background('/img/main_cover.jpg');}
+header {
+    @include section-background('../img/main_cover.jpg');
+    div.container{
+        height: 100%;
+    }
+}
 
-#events {@include section-background('/img/event_cover.jpg');}
+#events {@include section-background('../img/event_cover.jpg');}
 
-#concert {@include section-background('/img/concert_cover.jpg');}
+#concert {@include section-background('../img/concert_cover.jpg');}
 
-#talent {@include section-background('/img/talent_cover.jpg');}
+#talent {@include section-background('../img/talent_cover.jpg');}
 
-#consult{@include section-background('/img/consult_cover.jpg');}
+#consult{@include section-background('../img/consult_cover.jpg');}
+
+.intro{
+    position: relative;
+    height: 100%;
+}
+
+.introimg{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 .section-content{
     position: relative;
-    padding-top: 50px;
+    padding-top: 3.5em;
     margin: 0 2em;
     
     @media (min-width: 720px){
@@ -187,6 +216,19 @@ header {@include section-background('/img/main_cover.jpg');}
 .concert-date{
     font-size: 2em;
     line-height: 1em;
+}
+
+#consult{
+    @media(max-height: 600px){
+        div{
+            h1{
+                margin:0.4em 0 ;
+            }
+            p{
+                margin:0.1em 0;
+            }
+        }
+    }
 }
 
 footer{
