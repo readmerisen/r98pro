@@ -3,6 +3,8 @@ var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var watch = require('gulp-watch');
+var livereload = require ('gulp-livereload');
 
 var reload = browserSync.reload;
 
@@ -10,7 +12,7 @@ var reload = browserSync.reload;
 gulp.task('serve', function(){
 	browserSync({
 		server:{
-			baseDir: 'src'
+			baseDir: './src'
 		}
 	});
 

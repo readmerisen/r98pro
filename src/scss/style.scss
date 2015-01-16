@@ -161,7 +161,8 @@ header {
 }
 
 .content-wrap{
-    max-width: 1/2.5*960px;
+    
+    overflow: hidden;
 }
 
 .event-ul{
@@ -169,6 +170,7 @@ header {
     
     li{
         position: relative;
+        margin: 0px;
         list-style: none;
         left:-40px;
     }
@@ -181,12 +183,91 @@ header {
         display: inline-block;
     }
     
-    .date{
+    .date, .desc{
+        position: relative;
         margin: 1em 0 1em 1em;
-        background-color: blue;
-        width: 5em;
         height: 5em;
     }
+
+    .date{
+        float:left;
+        background-color: blue;
+        width: 5em;
+    }
+
+    .desc h2{
+        margin-top:0em;
+        margin-bottom: 0.1em;
+    }
+}
+
+.day-tick{
+    position: relative;
+    float: left;
+    left: 0.25em;
+}
+
+.date-tick{
+    position:relative;
+    float: right;
+    top: -0.5em;
+    left: -0.25em;
+}
+
+.btn-white{
+    padding: 1px 3px;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+}
+
+$poster_width_large: 1.5*400px;
+$poster_width_medium: 400px;
+$poster_height_large: 1.5*569px;
+$poster_height_medium: 569px;
+
+/* carousel */
+#carousel-wrap{
+    display:none;
+    @media (min-width: 990px){
+        display: block;
+        margin-top: 7em;
+        height: $poster_height_medium;
+        width: $poster_width_medium;
+        overflow: hidden;
+    }
+    @media (min-width: 1300px){
+        display: block;
+        margin-top: 0px;
+        height: $poster_height_large;
+        width: $poster_width_large;
+        overflow: hidden;
+    }
+}
+
+#carousel-ul{
+    list-style-type: none;
+    width:9500px;
+    margin: 0px;
+
+    li{
+        position:relative;
+        margin: 0px;
+        float:left;
+        width: 5/12*960px;
+        left:-400px;
+        @media (min-width: 990px){
+            height: $poster_height_medium;
+            width: $poster_width_medium;
+            left: -440px;
+        }
+        @media (min-width: 1300px){
+            height: $poster_height_large;
+            width: $poster_width_large;
+            left: -1.6*400px;
+        }
+    }
+
 }
 
 .concert-content{

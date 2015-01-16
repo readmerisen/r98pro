@@ -148,12 +148,13 @@ header {
     max-width: 384px; }
 
 .content-wrap {
-  max-width: 384px; }
+  overflow: hidden; }
 
 .event-ul {
   background-color: rgba(15, 15, 15, 0.8); }
   .event-ul li {
     position: relative;
+    margin: 0px;
     list-style: none;
     left: -40px; }
 
@@ -161,11 +162,73 @@ header {
   width: 100%; }
   .event div {
     display: inline-block; }
-  .event .date {
+  .event .date, .event .desc {
+    position: relative;
     margin: 1em 0 1em 1em;
-    background-color: blue;
-    width: 5em;
     height: 5em; }
+  .event .date {
+    float: left;
+    background-color: blue;
+    width: 5em; }
+  .event .desc h2 {
+    margin-top: 0em;
+    margin-bottom: 0.1em; }
+
+.day-tick {
+  position: relative;
+  float: left;
+  left: 0.25em; }
+
+.date-tick {
+  position: relative;
+  float: right;
+  top: -0.5em;
+  left: -0.25em; }
+
+.btn-white {
+  padding: 1px 3px;
+  border-radius: 3px;
+  background-color: white;
+  color: black; }
+
+/* carousel */
+#carousel-wrap {
+  display: none; }
+  @media (min-width: 990px) {
+    #carousel-wrap {
+      display: block;
+      margin-top: 7em;
+      height: 569px;
+      width: 400px;
+      overflow: hidden; } }
+  @media (min-width: 1300px) {
+    #carousel-wrap {
+      display: block;
+      margin-top: 0px;
+      height: 853.5px;
+      width: 600px;
+      overflow: hidden; } }
+
+#carousel-ul {
+  list-style-type: none;
+  width: 9500px;
+  margin: 0px; }
+  #carousel-ul li {
+    position: relative;
+    margin: 0px;
+    float: left;
+    width: 400px;
+    left: -400px; }
+    @media (min-width: 990px) {
+      #carousel-ul li {
+        height: 569px;
+        width: 400px;
+        left: -440px; } }
+    @media (min-width: 1300px) {
+      #carousel-ul li {
+        height: 853.5px;
+        width: 600px;
+        left: -640px; } }
 
 .concert-content {
   position: relative;
