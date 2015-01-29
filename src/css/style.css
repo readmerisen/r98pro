@@ -135,7 +135,7 @@ header {
 
 .section-content {
   position: relative;
-  padding-top: 3.5em;
+  padding-top: 1.5em;
   margin: 0 2em; }
   @media (min-width: 720px) {
     .section-content {
@@ -166,6 +166,10 @@ header {
     position: relative;
     margin: 1em 0 1em 1em;
     height: 5em; }
+    @media (max-width: 397px) {
+      .event .date, .event .desc {
+        float: left;
+        margin: 0 0.1em; } }
   .event .date {
     float: left;
     background-color: blue;
@@ -221,6 +225,10 @@ header {
     left: -400px; }
     @media (min-width: 990px) {
       #carousel-ul li {
+        display: none; } }
+    @media (min-width: 992px) {
+      #carousel-ul li {
+        display: block;
         height: 569px;
         width: 400px;
         left: -440px; } }
@@ -236,7 +244,6 @@ header {
   margin: 0 2em; }
   @media (min-width: 520px) {
     .concert-content {
-      top: 50%;
       padding-left: 7em; } }
   .concert-content .concert-wrapper {
     padding: 0.5em 1.5em;
@@ -246,10 +253,54 @@ header {
 
 .concert-artist {
   font-size: 4em; }
+  @media (max-width: 500px) {
+    .concert-artist {
+      font-size: 2em; } }
 
 .concert-date {
   font-size: 2em;
   line-height: 1em; }
+  @media (max-width: 500px) {
+    .concert-date {
+      font-size: 1em;
+      line-height: 0.5em; } }
+
+.extra-wrap {
+  top: -5em;
+  max-width: 720px; }
+  .extra-wrap img {
+    position: relative;
+    top: -2em; }
+    @media (max-width: 500px) {
+      .extra-wrap img {
+        display: none; } }
+
+.poster-horizontal {
+  position: relative;
+  float: left;
+  width: 400px;
+  top: -8em;
+  z-index: 0; }
+  @media (max-width: 991px) {
+    .poster-horizontal {
+      display: none; } }
+
+.talent-display {
+  height: 500px; }
+  .talent-display .talent-text {
+    z-index: 2;
+    position: relative;
+    margin: 1.5em 0.5em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px; }
+    @media (min-width: 500px) {
+      .talent-display .talent-text {
+        top: 90%; } }
+  .talent-display .img-talent {
+    position: absolute;
+    z-index: 0;
+    max-height: 700px; }
 
 @media (max-height: 600px) {
   #consult div h1 {
